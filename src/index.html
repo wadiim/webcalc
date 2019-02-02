@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+    <div id="calc">
+      <div id="top"></div>
+      <div id="body">
+        <div id="display">
+          <input id="input" placeholder="0" disabled='disabled'>
+        </div>
+        <div id="buttons">
+          <div class="line">
+            <button class="val">(</button>
+            <button class="val">)</button>
+            <button id="C">C</button>
+            <button id="back"><img src="../icon/back.png"></button>
+          </div>
+          <div class="line">
+            <button class="val">7</button>
+            <button class="val">8</button>
+            <button class="val">9</button>
+            <button class="val" id="div">&#xf7;</button>
+          </div>
+          <div class="line">
+            <button class="val">4</button>
+            <button class="val">5</button>
+            <button class="val">6</button>
+            <button class="val" id="mul">&#xd7;</button>
+          </div>
+          <div class="line">
+            <button class="val">1</button>
+            <button class="val">2</button>
+            <button class="val">3</button>
+            <button class="val" id="sub">&#x2212;</button>
+          </div>
+          <div class="line">
+            <button class="val">0</button>
+            <button class="val">.</button>
+            <button id="equal">=</button>
+            <button class="val">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="parser.js"></script>
+    <script type="text/javascript" src="events.js"></script>
+  </body>
+</html>
